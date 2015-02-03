@@ -1,35 +1,27 @@
 $(document).ready(function() {
 
-//range of numbers to start with
 var minNum = 1;
-var maxNum = 16;
+var maxNum = 100;
 
 while ( minNum < maxNum ) {
-  //console.log(minNum); print to the console
-  //if minNum /3 append fizz to the body
-  if (minNum % 3 ==0){
-  	$('body').append(minNum + ' fizz' + '</br>')
-  }
+	//normal - not divisble by 3 AND by 5
+  	if (minNum % 3 !=0 && minNum % 5 !=0){
+  		$('body').append('<p>' + minNum + '</p>')
+	}
+	//fizzbuzz - divisible by 3 AND 5
+  	else if (minNum % 3 ==0 && minNum % 5 ==0){
+  		$('body').append('<p><span id="fizz">fizz</span><span id="buzz">Buzz</span></p>')
+	}
+	//fizz - divisible by 3
+  	else if (minNum % 3 ==0){
+  		$('body').append('<p id="fizz">fizz</p>')
+	}
+ 	//buzz - divisible by 5
+  	else if (minNum % 5 ==0){
+  		$('body').append('<p id="buzz">buzz</p>')
+  	}
   
-  //if minNum /5 append buzz to the body
-  else if (minNum % 5 ==0){
-  	$('body').append(minNum + ' buzz' + '</br>')
-  }
-
-  else if (minNum % 3 ==0 && minNum % 5 ==0){
-  	$('body').append(minNum + ' fizzBuzz' + '</br>')
-  }
-
-  else if (minNum % 3 !=0 || minNum % 5 !=0){
-  	$('body').append(minNum + '</br>')
-}
   minNum++;
 }
-
-
-
-
-
-
 
 });
