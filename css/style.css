@@ -12,8 +12,13 @@ body {
 }
 
 p {
-	margin-bottom: 0em;
-	margin-top: 0.25em;
+	margin-top: 0.0em;
+}
+
+#numTarget{
+	color: #BCBCBC; 
+	margin-bottom: 1.0em;
+	word-spacing: 0.333em;
 }
 
 #buzz{
@@ -36,17 +41,18 @@ p {
 }
 
 
-.social{
+.social, .textInput {
 	width: 20em;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 2em;
 	background-color: #E9E9E9;
 	color: #424242;
 	font-family: 'Cabin', Arial, sans-serif;
 	font-size: .75em;
 	text-align: center;
 	padding-top: .25em;
-	padding-bottom: .5em;
+	padding-bottom: 0.5em;
 }
 
 .social a{
@@ -65,6 +71,12 @@ p {
 	height: 2px;
     border: 0; border-top: 2px solid #424242;
 }
+
+.textInput {
+    vertical-align: middle;
+	text-transform: none;
+}
+
 
 /* 
 #FF9900 orange (FIZZ)
