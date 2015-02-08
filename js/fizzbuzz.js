@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 var minNum = 1;
-var maxNum = 100;
+var maxNum = 101;
 
 while ( minNum < maxNum ) {
 	//normal - not divisble by 3 AND by 5
