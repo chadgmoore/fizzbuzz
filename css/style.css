@@ -45,14 +45,14 @@ p {
 	width: 20em;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
 	background-color: #E9E9E9;
 	color: #424242;
 	font-family: 'Cabin', Arial, sans-serif;
 	font-size: .75em;
 	text-align: center;
 	padding-top: .25em;
-	padding-bottom: 0.5em;
+	padding-bottom: 0.25em;
 }
 
 .social a{
