@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Funky FizzBuzz</title>
@@ -10,25 +11,27 @@
  	<script src="http://code.jquery.com/jquery.min.js"></script>
   	<script src="js/fizzbuzz.js"></script>
 </head>
-<body>
-	<form id='numEntry'>
-		<input type="text" name="newNum" class="textInput" autocomplete="off" placeholder="Please enter a number.">
-		</input>		
-	</form>
+<section class="content">
+  <ul class="flex-container">
+    <li class="text-input">
+    	<form id='numEntry'>
+        <input type="text" name="newNum" class="textInput" autocomplete="off" placeholder="Please enter a number.">
+        </input>		
+      </form>
+    </li>
+    <li class="fizzBuzzTarget">
+      <p id="numTarget"></p>
+    </li>
+    <li class="social">
+      <div>
+        <p>Made by <a href="http://www.chadmoore.net" target="_blank">Chad Moore</a> on the Seacoast of New Hampshire.</p>
+        <!-- <hr> -->
+        </br>
+        <a href="http://www.twitter.com/smapdi" target="_blank" class="socialLinks"><i class="fa fa-twitter fa-3x"></i></a>
+        <a href="http://www.github.com/chadgmoore" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+      </div>
+    </li>
+  </ul>  
+</section>
 
-<p id="numTarget">
-	
-</p>
-
-</body>
-<footer class="social">
-	<div class="social">
-		<p>Made by <a href="http://www.chadmoore.net" target="_blank">Chad Moore</a> on the Seacoast of New Hampshire.</p>
-		<hr>
-		</br>
-		<a href="http://www.twitter.com/smapdi" target="_blank" class="socialLinks"><i class="fa fa-twitter fa-2x"></i></a>
-		<a href="http://www.github.com/chadgmoore" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-	</div>
-	
-</footer>
 </html>

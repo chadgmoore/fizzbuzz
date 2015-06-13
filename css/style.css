@@ -1,23 +1,119 @@
-body {
-    /* Typography Declarations */
-    background-color: #424242;
-    color: #E9E9E9;
-    font-size: 2.0em;
-    font-family: 'Oswald', "Helvetica Neue", sans-serif;
-    width: 16em;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: .5em;
+html{
+	background-color: #424242;
 }
 
-p {
-	margin-top: 0.0em;
+.content{
+	padding: 0;
+	margin: 0;
+  	list-style: none;
+  
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row;
+	justify-content: space-around;
+
+	background: #424242;
+	color: #E9E9E9;
+	/*font-size: 2.0em;
+	*/font-family: 'Oswald', "Helvetica Neue", sans-serif;
+
+}
+
+.flex-container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+
+	-webkit-flex-flow: column;
+	justify-content: space-around;
+}
+
+.text-input, .social {
+	width: 40em;
+	height: 10em;
+	margin-top: 10px;
+
+	line-height: 3em;
+	font-size: 1em;
+	text-align: center;
+	align-items: center;
+
+	margin-bottom: 0.5em;
+	background-color: #E9E9E9;
+	color: #424242;
+	font-family: 'Cabin', Arial, sans-serif;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.text-input{
+	width: 13.5em;
+	height: 3em;
+	font-size: 3em;
+}
+
+.fizzBuzzTarget {
+	width: 20em;
+	margin-top: 10px;
+  	line-height: 2em;
+  	font-size: 2em;
+  	text-align: center;
+  	align-items: center;
+  
+	color: #424242;
+	font-family: 'Cabin', Arial, sans-serif;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.social {
+	padding-bottom: 2em;
+	line-height: 1em;
+/*	align-items: center;
+*/	align-content: center;
+}
+
+.social p{
+	font-size: 1em;
+}
+
+.social a{
+	color: #3299BB;
+	text-decoration: underline;
+}
+
+.social a:hover{
+	text-decoration: none;
+	color: #FF9900;
+}
+
+.social hr{
+	width: 33%;
+	display: inline-block;
+	height: 2px;
+  	border: 0; border-top: 2px solid #424242;
+}
+
+.textInput {
+  	vertical-align: middle;
+	text-transform: none;
+	font-size: 1em;
 }
 
 #numTarget{
 	color: #BCBCBC; 
-	margin-bottom: 1.0em;
+/*	margin-bottom: 1.0em;*/
 	word-spacing: 0.333em;
 }
 
@@ -40,48 +136,25 @@ p {
 	margin-bottom: 0em;
 }
 
-
-.social, .textInput {
-	width: 20em;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 0.5em;
-	background-color: #E9E9E9;
-	color: #424242;
-	font-family: 'Cabin', Arial, sans-serif;
-	font-size: .75em;
-	text-align: center;
-	padding-top: .25em;
-	padding-bottom: 0.25em;
+/*@media screen and (max-width: 900px) { 
+  #got-gridbox figure figcaption { 
+    font-size: 1.4rem; }
 }
 
-.social a{
-	color: #3299BB;
-	text-decoration: underline;
+@media screen and (max-width: 800px) { 
+	#got-gridbox figure figcaption { 
+    font-size: 1.25rem; }
 }
 
-.social a:hover{
-	text-decoration: none;
-	color: #FF9900;
+@media screen and (max-width: 750px) { 
+	#got-gridbox figure { 
+    flex: 0 0 100%; margin-bottom: 7%;  
+  }
+	#got-gridbox figure figcaption { 
+    font-size: 1.6rem; 
+  }
 }
 
-.social hr{
-	width: 33%;
-	display: inline-block;
-	height: 2px;
-    border: 0; border-top: 2px solid #424242;
-}
-
-.textInput {
-    vertical-align: middle;
-	text-transform: none;
-}
-
-
-/* 
-#FF9900 orange (FIZZ)
-#424242 dark gray
-#BCBCBC medium gray (body)
-#E9E9E9 light gray
-#3299BB blue (BUZZ)
-*/
+@media screen and (max-width: 450px) { 
+	#got-gridbox figure figcaption { font-size: 1.2rem; width: 50%; }
+}*/
