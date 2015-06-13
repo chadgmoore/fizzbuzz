@@ -1,5 +1,4 @@
 $(document).ready(function() {
-//add item
   $('.textInput').keypress(function(e) {
     if(e.which == 13) {
       e.preventDefault();
@@ -9,6 +8,7 @@ $(document).ready(function() {
       if (!isNaN(newNum) && (newNum % 1 == 0)) {
         var max = newNum++;
         document.getElementById("numEntry").reset();
+        $('#numTarget').empty();
         fizzbuzz(max);
         }
 
@@ -17,6 +17,7 @@ $(document).ready(function() {
         document.getElementById("numEntry").reset();
       }
   }
+
 });
 
 function fizzbuzz(max) {
@@ -32,5 +33,6 @@ function fizzbuzz(max) {
     }
   }
 }
+
 
 });
