@@ -3,6 +3,7 @@ html{
 }
 
 .content{
+	width: 100%
 	padding: 0;
 	margin: 0;
   	list-style: none;
@@ -24,6 +25,7 @@ html{
 }
 
 .flex-container {
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -154,7 +156,9 @@ html{
     font-size: 1.6rem; 
   }
 }
-
-@media screen and (max-width: 450px) { 
-	#got-gridbox figure figcaption { font-size: 1.2rem; width: 50%; }
-}*/
+*/
+@media screen and (max-width: 700px) { 
+	.fizzBuzzTarget, .social { width: 74%; }
+	.text-input  { width: 7.5em; }
+	.textInput {font-size: 0.33em;}
+}
